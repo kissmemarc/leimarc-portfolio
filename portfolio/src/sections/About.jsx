@@ -92,21 +92,21 @@ const About = () => {
     <div>
       {/* Header with typing animation */}
       <div className="animate-fade-in-up">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
+        <h2 className="text-3xl font-bold text-stone-800 mb-3">
           {displayedText}
           <span className="animate-pulse text-primary">|</span>
         </h2>
-        <div className="w-12 h-1 bg-gradient-to-r from-primary to-yellow-400 rounded-full mb-8"></div>
+        <div className="w-12 h-1 rounded-full mb-8" style={{ background: '#d97706' }}></div>
       </div>
 
       {/* Condensed single paragraph with smaller font */}
       <div className="animate-fade-in-up stagger-1">
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-          Hi! I’m an undergraduate student pursuing a degree in Information Technology, specializing in <span className="font-bold text-primary">Web Developement</span> with technology such as <span className="font-semibold text-gray-900 dark:text-white">Javascript, Php, and React</span> .
+        <p className="text-sm text-stone-700 leading-relaxed">
+          Hi! I'm an undergraduate student pursuing a degree in Information Technology, specializing in <span className="font-bold text-primary">Web Developement</span> with technology such as <span className="font-semibold text-stone-900">Javascript, Php, and React</span>.
            My focus areas include cross-platform applications, scalable backend architectures, and modern UI/UX design. 
            I am seeking an entry-level IT position where I can apply my knowledge of software development and system troubleshooting, 
            while continuously learning and growing in a collaborative, fast-paced environment.
-          <span className="inline-block ml-2 font-semibold text-primary hover:text-yellow-500 transition-colors cursor-pointer">
+          <span className="inline-block ml-2 font-semibold text-primary hover:text-amber-600 transition-colors cursor-pointer">
             Let's build something exceptional together →
           </span>
         </p>
@@ -115,12 +115,12 @@ const About = () => {
       {/* Certifications Section */}
       <div className="animate-fade-in-up stagger-2 mt-10">
         <div className="flex items-center gap-4 mb-8">
-          <div className={`w-12 h-12 flex items-center justify-center rounded-xl ${
+          <div className={`w-12 h-12 flex items-center justify-center ${
             isDark ? 'neu-pressed-dark' : 'neu-pressed'
           }`}>
             <FaAward className="text-primary text-2xl" />
           </div>
-          <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Certifications & Achievements</h3>
+          <h3 className="text-3xl font-bold text-stone-800">Certifications & Achievements</h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -129,7 +129,7 @@ const About = () => {
               key={index}
               ref={(el) => (certificationsRef.current[index] = el)}
               onClick={() => handleCertificateClick(cert)}
-              className={`reveal-on-scroll group relative rounded-2xl transition-all duration-500 overflow-hidden cursor-pointer hover:-translate-y-2 ${
+              className={`reveal-on-scroll group relative transition-all duration-300 overflow-hidden cursor-pointer hover:-translate-y-1 ${
                 isDark ? 'neu-flat-dark hover:neu-raised-dark' : 'neu-flat hover:neu-raised'
               }`}
               style={{ 
@@ -165,17 +165,17 @@ const About = () => {
 
               {/* Certificate Info */}
               <div className="relative z-10 p-4">
-                <h4 className="text-base font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors duration-300 line-clamp-2">
+                <h4 className="text-base font-bold text-stone-800 mb-2 group-hover:text-primary transition-colors duration-300 line-clamp-2">
                   {cert.name}
                 </h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">{cert.issuer}</p>
+                <p className="text-sm text-stone-500 mb-3">{cert.issuer}</p>
                 <div className="flex items-center justify-between">
-                  <span className={`text-xs px-3 py-1.5 text-primary rounded-lg font-semibold transition-all duration-300 ${
+                  <span className={`text-xs px-3 py-1.5 text-primary font-semibold transition-all duration-300 ${
                     isDark ? 'neu-pressed-dark group-hover:bg-primary group-hover:text-white' : 'neu-pressed group-hover:bg-primary group-hover:text-white'
                   }`}>
                     {cert.year}
                   </span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400 group-hover:text-primary transition-colors duration-300 flex items-center gap-1">
+                  <span className="text-xs text-stone-400 group-hover:text-primary transition-colors duration-300 flex items-center gap-1">
                     <FaAward className="text-xs" />
                     View
                   </span>

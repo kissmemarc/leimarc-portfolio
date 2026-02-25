@@ -8,17 +8,31 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#ffb400',
+        primary: '#d97706',
+        retro: {
+          bg: '#fef9f0',
+          paper: '#fffdf5',
+          paperAlt: '#fef3dc',
+          ink: '#2d1b00',
+          inkLight: '#5c3d1e',
+          inkMuted: '#9a7040',
+          amber: '#d97706',
+          orange: '#c2410c',
+          cream: '#fef9f0',
+        },
         dark: {
-          bg: '#1e1e1f',
-          card: '#252527',
-          border: '#393939',
+          bg: '#fef9f0',
+          card: '#fffdf5',
+          border: '#2d1b00',
         },
         light: {
-          bg: '#ffffff',
-          card: '#f8f9fa',
-          border: '#e0e0e0',
+          bg: '#fef9f0',
+          card: '#fffdf5',
+          border: '#2d1b00',
         }
+      },
+      fontFamily: {
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
       },
     },
   },

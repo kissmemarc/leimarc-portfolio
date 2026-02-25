@@ -9,11 +9,12 @@ const Resume = () => {
   const fullText = 'Resume';
 
   const skills = [
-    { name: 'Web Development', level: 95 },
-    { name: 'Mobile Development', level: 90 },
-    { name: 'Backend Development', level: 85 },
+    { name: 'Web Development', level: 85 },
     { name: 'UI/UX Design', level: 80 },
-    { name: 'DevOps', level: 75 },
+    { name: 'Backend Development', level: 60 },
+    { name: 'Mobile Development', level: 50 },
+  
+    
   ];
 
   const education = [
@@ -40,16 +41,7 @@ const Resume = () => {
         'Architect scalable backend services and mentor development team',
       ],
     },
-    {
-      company: 'Digital Innovations Ltd.',
-      position: 'Full Stack Developer',
-      period: 'Aug 2021 — Jan 2023',
-      location: 'New York, USA',
-      responsibilities: [
-        'Built responsive web apps with React & TypeScript',
-        'Developed RESTful APIs and implemented CI/CD pipelines',
-      ],
-    },
+    
   ];
 
   // Typing animation effect
